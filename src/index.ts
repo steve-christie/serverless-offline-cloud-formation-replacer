@@ -5,7 +5,7 @@ interface IReplacement {
 	replaceWith: string
 }
 
-const pluginName = "serverless-offline-cloud-formation-replacer";
+const pluginName = "serverless-offline-provider-value-replacer";
 
 export class ServerlessOfflineCloudFormationReplacer {
 	declare serverless
@@ -37,12 +37,12 @@ export class ServerlessOfflineCloudFormationReplacer {
 			return;
 		}
 
-		if (!this.serverless.service.custom.offline["cloud-formation-replacements"]) {
-			this.logMessage("No cloud-formation-replacements object present in offline object in serverless yaml")
+		if (!this.serverless.service.custom.offline["provider-replacements"]) {
+			this.logMessage("No provider-replacements object present in offline object in serverless yaml")
 			return;
 		}
 
-		const replacements: IReplacement[] = this.serverless.service.custom.offline["cloud-formation-replacements"];
+		const replacements: IReplacement[] = this.serverless.service.custom.offline["provider-replacements"];
 		this.logMessage(`Replacements requested: ${replacements}`)
 
 		replacements.forEach((replacement: IReplacement) => this.actionReplacement(replacement))
