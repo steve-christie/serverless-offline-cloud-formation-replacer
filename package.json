@@ -1,17 +1,34 @@
 {
   "name": "serverless-offline-provider-value-replacer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Serverless plugin for managing replacement of values after serverless.yml compilation",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steve-christie/serverless-offline-provider-value-replacer.git"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "compile": "tsc --build",
     "build": "npm run clean && npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "serverless",
+    "serverless-plugin",
+    "serverless-offline",
+    "nodejs",
+    "local development",
+    "offline",
+    "aws",
+    "aws lambda",
+    "[object Object]",
+    "cloud formation",
+    "!ImportValue",
+    "environment variables"
+  ],
+  "author": "Steven Christie",
+  "license": "MIT",
   "peerDependencies": {
     "serverless": "^3.22.0"
   },
