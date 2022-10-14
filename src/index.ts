@@ -56,7 +56,6 @@ export class ServerlessOfflineCloudFormationReplacer {
 	}
 }
 
-
 module.exports = ServerlessOfflineCloudFormationReplacer
 
 
