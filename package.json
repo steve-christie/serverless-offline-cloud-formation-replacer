@@ -1,7 +1,7 @@
 {
   "name": "serverless-offline-provider-value-replacer",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Serverless plugin for managing replacement of values after serverless.yml compilation",
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
