@@ -1,8 +1,8 @@
 {
-  "name": "serverless-offline-cloud-formation-replacer",
-  "version": "1.0.0",
+  "name": "serverless-offline-provider-value-replacer",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
     "compile": "tsc --build",
@@ -15,13 +15,24 @@
   "peerDependencies": {
     "serverless": "^3.22.0"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@types/chai": "^4.3.3",
+    "@types/js-yaml": "^4.0.5",
+    "@types/jsonpath": "^0.2.0",
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.8.5",
+    "@types/serverless": "^3.12.8",
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "jsonpath": "^1.1.1"
   }
 }
